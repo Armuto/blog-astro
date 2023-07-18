@@ -1,13 +1,12 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import '../styles/global.css'
+import Header from "../components/Header.astro";
 ---
 
 <Layout title="blog">
-    <body>
         <h1>Blog</h1>
-        <a href="/">Home</a>
-        <a href="/about/">About</a>
+        <Header/>
 
         <h1>Mi blog de Astro aprendizaje</h1>
         <p>Aquí es donde voy a post sobre mi viaje de aprendizaje Astro.</p>
@@ -16,5 +15,4 @@ import '../styles/global.css'
           <li><a href="/post/post-2/">Post 2</a></li>
           <li><a href="/post/post-3/">Post 3</a></li>
         </ul>
-        </body>
 </Layout>

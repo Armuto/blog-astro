@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
 import '../styles/global.css'
 
 const pageTitle='Sobre mi';
@@ -26,8 +27,7 @@ const skillFontSize="2rem";
 
 <Layout title={`${pageTitle}`}>
     <h1>Sobre mi</h1>
-    <a href="/">Inicio</a>
-    <a href="/blog/">Blog</a>
+    <Header/>
     <ul>
         <li>Me llamo {identity.firstName} </li>
         <li>Vivo en {identity.country} y trabajo como {identity.occupation}.</li>

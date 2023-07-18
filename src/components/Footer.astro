@@ -1,0 +1,22 @@
+---
+import Social from "./Social.astro";
+
+const platform="github";
+const username="armuto";
+---
+
+<footer>
+    <p>Mi nombre de usuario en {platform} es <a href=`https://${platform}.com/Armuto` target="_blank">{username}</a></p>
+    <Social platform="twitter" username="astrobuild" />
+    <Social platform="facebook" username="afgnistano"/>
+</footer>
+
+<style>
+    footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+</style>
