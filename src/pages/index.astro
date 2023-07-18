@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import BaseLayout from '../layouts/BaseLayout.astro'
 
 //Componentes
 import Header from '../components/Header.astro';
@@ -9,9 +10,14 @@ import Social from '../components/Social.astro';
 //Estilos Global
 import '../styles/global.css'
 
----
+const pageTitle = "Home Page";
 
-<Layout title="Inicio">
+---
+<BaseLayout pageTitle={pageTitle}>
+<h2>Mi impresionante subtítulo del blog</h2>
+</BaseLayout>
+
+<!-- <Layout title="Inicio">
 	<Header/>
 	<main>
 		<h1>Astro</h1>
@@ -20,4 +26,4 @@ import '../styles/global.css'
 	<script>
 		import "../scripts/menu.js";
 	</script>
-</Layout>
+</Layout> -->
